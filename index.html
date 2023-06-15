@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <header class="header">
+        <section class="tamanho">
+            <h1 class="header-name">Formulário de contato</h1>
+        
+        </section>
+    </header>
+
+    <section class="sec">
+        <div class="baguio">
+            <div class="sec-div">
+                <div class="form">
+                    <fieldset class="">
+                        <legend class="title">Dados pessoais</legend>
+                        <fieldset class="input-field">
+                            <legend>Nome</legend>
+                            <input id="namew" type="text" class="div_normal red" name="name" id="" minlength="2" maxlength="100" placeholder="Digite seu nome" >
+                        </fieldset>
+                        <fieldset class="input-field">
+                            <legend>Email</legend>
+                            <input id="email" type="email" class="div_normal red" name="email" id="" placeholder="Digite seu email" minlength="10" maxlength="100" >
+                        </fieldset>
+                        <fieldset class="input-field">
+                            <legend>Cpf</legend>
+                            <input id="cpf" type="text" name="cpf" class="div_normal red" max-length="11" id="" placeholder="Digite seu cpf" minlength="11" maxlength="11" >
+                        </fieldset>
+                        <fieldset class="input-field">
+                            <legend>Data de nascimento</legend>
+                            <input id="date" type="date" class="div_normal red" name="datanascimento" id="" placeholder="Digite seu nome" >
+                        </fieldset>
+                        <fieldset class="input-field-sexo ">
+                            <legend>Sexo</legend>
+                            <input id="m" type="radio" id="sexo" name="age" value="f">
+                            <label for="sexo1">Masculino</label>
+                            <input id="f" type="radio" id="sexo" name="age" value="m">
+                            <label for="sexo2">Feminino</label><br>  
+                        </fieldset>
+                        <fieldset class="input-field">
+                            <legend>Telefone</legend>
+                            <input id="tel" type="tel" class="div_normal red" name="telefone"placeholder="Digite seut telefone" minlength="11" maxlength="11" >
+                        </fieldset>
+                    </fieldset>
+                    <div class="button">
+                        <button onclick="renderPage()">Enviar</button>
+                        <button type="reset">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="div-hidden dvv">
+                <div class="marg">
+                    <p>Olá nome:</p>
+                    <h1 class="name1 h1title"></h1>
+                    <p>Bem vindo!</p>
+                    <p>Dados:</p>
+                    <p>Email:</p>
+                    <p class="email1 pzz"></p>
+                    <p>Cpf:</p>
+                    <p class="cpf1 pzz"></p>
+                    <p>Data:</p>
+                    <p class="data1 pzz"></p>
+                    <p>Telefone:</p>
+                    <p class="tel1 pzz"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <footer class="footer">
+            <section class="tamanho">
+                <h2 class="footer-titulo">with love by karol</h2>
+                <div class="footer-icons">
+                    <img src="img/Vector1.png" alt="img vector" class="footer-icons-img">
+                    <img src="img/instagram.png" alt="img vector" class="footer-icons-img">
+                    <img src="img/Vector3.png" alt="img vector" class="footer-icons-img">
+                </div>
+            </section>
+        </footer>
+</body>
+</html>
